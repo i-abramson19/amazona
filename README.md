@@ -1,10 +1,5 @@
 ## amazona
 
-product and user seed
-
-paypal client id add to env
-
-
 ## Introduction
 
 Basic ecommerce app that allows users to shop for clothes. Built using MongoDB, Express.js, React.js, Redux, and Node.js (MERN stack).
@@ -15,11 +10,11 @@ This project was part of a [Udemy](https://www.udemy.com/course/build-ecommerce-
 
 * In the root directory, rename .env.example to .env and add your MONGODB_URL.
 
-* To add example products to the database,
+* To add example products to the database:
 
-1) Uncomment lines 4 and 8-15 in routers/productRouter.js.
+    1) Uncomment lines 4 and 8-15 in routers/productRouter.js.
 
-2) Go to http://localhost:5000/api/products/seed.
+    2) Go to http://localhost:5000/api/products/seed.
 
 * This project is in the Paypal [sandbox](https://developer.paypal.com/tools/sandbox/) environment. To use live Paypal accounts, add a PAYPAL_CLIENT_ID to your .env file.
 
@@ -77,3 +72,5 @@ heroku open
 ```
 
 ### Demo
+
+https://ia-mern-amazona.herokuapp.com
