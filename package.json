@@ -1,0 +1,38 @@
+{
+  "name": "amazona",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-abramson19/amazona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-abramson19/amazona/issues"
+  },
+  "homepage": "https://github.com/i-abramson19/amazona#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.7",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
